@@ -2,13 +2,19 @@
 
 import SwiftUI
 
+extension Date {
+  var startOfYear: Date {
+     Calendar.current.dateInterval(of: .year, for: self)!.start
+  }
+}
+
 struct ContentView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+          Text(Date.now.startOfYear, format: .dateTime)
         }
         .padding()
     }

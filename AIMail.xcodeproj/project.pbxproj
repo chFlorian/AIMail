@@ -11,7 +11,38 @@
 		5CF5FC90299CE24F00747A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5FC8F299CE24F00747A80 /* ContentView.swift */; };
 		5CF5FC92299CE25000747A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF5FC91299CE25000747A80 /* Assets.xcassets */; };
 		5CF5FC95299CE25000747A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF5FC94299CE25000747A80 /* Preview Assets.xcassets */; };
+		5CF5FCA3299CE2A500747A80 /* MailExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5FCA2299CE2A500747A80 /* MailExtension.swift */; };
+		5CF5FCA5299CE2A500747A80 /* ComposeSessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5FCA4299CE2A500747A80 /* ComposeSessionHandler.swift */; };
+		5CF5FCA7299CE2A500747A80 /* ComposeSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5FCA6299CE2A500747A80 /* ComposeSessionViewController.swift */; };
+		5CF5FCA9299CE2A500747A80 /* ComposeSessionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CF5FCA8299CE2A500747A80 /* ComposeSessionViewController.xib */; };
+		5CF5FCAE299CE2A500747A80 /* AIMail Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5CF5FCA0299CE2A400747A80 /* AIMail Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CF5FCB5299CE43400747A80 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CF5FCB4299CE43400747A80 /* OpenAISwift */; };
+		5CF5FCB7299CE44100747A80 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5FCB6299CE44100747A80 /* Secret.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CF5FCAC299CE2A500747A80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CF5FC82299CE24F00747A80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CF5FC9F299CE2A400747A80;
+			remoteInfo = "AIMail Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5CF5FCB2299CE2A500747A80 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5CF5FCAE299CE2A500747A80 /* AIMail Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5CF5FC8A299CE24F00747A80 /* AIMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +51,14 @@
 		5CF5FC91299CE25000747A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CF5FC94299CE25000747A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5CF5FC96299CE25000747A80 /* AIMail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AIMail.entitlements; sourceTree = "<group>"; };
+		5CF5FCA0299CE2A400747A80 /* AIMail Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AIMail Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF5FCA2299CE2A500747A80 /* MailExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailExtension.swift; sourceTree = "<group>"; };
+		5CF5FCA4299CE2A500747A80 /* ComposeSessionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeSessionHandler.swift; sourceTree = "<group>"; };
+		5CF5FCA6299CE2A500747A80 /* ComposeSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeSessionViewController.swift; sourceTree = "<group>"; };
+		5CF5FCA8299CE2A500747A80 /* ComposeSessionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComposeSessionViewController.xib; sourceTree = "<group>"; };
+		5CF5FCAA299CE2A500747A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CF5FCAB299CE2A500747A80 /* AIMail_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AIMail_Extension.entitlements; sourceTree = "<group>"; };
+		5CF5FCB6299CE44100747A80 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +69,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CF5FC9D299CE2A400747A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF5FCB5299CE43400747A80 /* OpenAISwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				5CF5FC8C299CE24F00747A80 /* AIMail */,
+				5CF5FCA1299CE2A500747A80 /* AIMail Extension */,
 				5CF5FC8B299CE24F00747A80 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				5CF5FC8A299CE24F00747A80 /* AIMail.app */,
+				5CF5FCA0299CE2A400747A80 /* AIMail Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +118,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5CF5FCA1299CE2A500747A80 /* AIMail Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5CF5FCA2299CE2A500747A80 /* MailExtension.swift */,
+				5CF5FCA4299CE2A500747A80 /* ComposeSessionHandler.swift */,
+				5CF5FCA6299CE2A500747A80 /* ComposeSessionViewController.swift */,
+				5CF5FCB6299CE44100747A80 /* Secret.swift */,
+				5CF5FCA8299CE2A500747A80 /* ComposeSessionViewController.xib */,
+				5CF5FCAA299CE2A500747A80 /* Info.plist */,
+				5CF5FCAB299CE2A500747A80 /* AIMail_Extension.entitlements */,
+			);
+			path = "AIMail Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +142,37 @@
 				5CF5FC86299CE24F00747A80 /* Sources */,
 				5CF5FC87299CE24F00747A80 /* Frameworks */,
 				5CF5FC88299CE24F00747A80 /* Resources */,
+				5CF5FCB2299CE2A500747A80 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5CF5FCAD299CE2A500747A80 /* PBXTargetDependency */,
 			);
 			name = AIMail;
 			productName = AIMail;
 			productReference = 5CF5FC8A299CE24F00747A80 /* AIMail.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5CF5FC9F299CE2A400747A80 /* AIMail Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF5FCAF299CE2A500747A80 /* Build configuration list for PBXNativeTarget "AIMail Extension" */;
+			buildPhases = (
+				5CF5FC9C299CE2A400747A80 /* Sources */,
+				5CF5FC9D299CE2A400747A80 /* Frameworks */,
+				5CF5FC9E299CE2A400747A80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AIMail Extension";
+			packageProductDependencies = (
+				5CF5FCB4299CE43400747A80 /* OpenAISwift */,
+			);
+			productName = "AIMail Extension";
+			productReference = 5CF5FCA0299CE2A400747A80 /* AIMail Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -102,6 +187,9 @@
 					5CF5FC89299CE24F00747A80 = {
 						CreatedOnToolsVersion = 14.1;
 					};
+					5CF5FC9F299CE2A400747A80 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 				};
 			};
 			buildConfigurationList = 5CF5FC85299CE24F00747A80 /* Build configuration list for PBXProject "AIMail" */;
@@ -113,11 +201,15 @@
 				Base,
 			);
 			mainGroup = 5CF5FC81299CE24F00747A80;
+			packageReferences = (
+				5CF5FCB3299CE43400747A80 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 5CF5FC8B299CE24F00747A80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5CF5FC89299CE24F00747A80 /* AIMail */,
+				5CF5FC9F299CE2A400747A80 /* AIMail Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +221,14 @@
 			files = (
 				5CF5FC95299CE25000747A80 /* Preview Assets.xcassets in Resources */,
 				5CF5FC92299CE25000747A80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF5FC9E299CE2A400747A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF5FCA9299CE2A500747A80 /* ComposeSessionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +244,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CF5FC9C299CE2A400747A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF5FCA5299CE2A500747A80 /* ComposeSessionHandler.swift in Sources */,
+				5CF5FCB7299CE44100747A80 /* Secret.swift in Sources */,
+				5CF5FCA7299CE2A500747A80 /* ComposeSessionViewController.swift in Sources */,
+				5CF5FCA3299CE2A500747A80 /* MailExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CF5FCAD299CE2A500747A80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CF5FC9F299CE2A400747A80 /* AIMail Extension */;
+			targetProxy = 5CF5FCAC299CE2A500747A80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5CF5FC97299CE25000747A80 /* Debug */ = {
@@ -263,6 +382,7 @@
 		5CF5FC9A299CE25000747A80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AIMail/AIMail.entitlements;
@@ -290,6 +410,7 @@
 		5CF5FC9B299CE25000747A80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AIMail/AIMail.entitlements;
@@ -309,6 +430,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.flowritesco.AIMail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5CF5FCB0299CE2A500747A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "AIMail Extension/AIMail_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YDE2UY2S5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AIMail Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AIMail Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.flowritesco.AIMail.AIMail-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5CF5FCB1299CE2A500747A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "AIMail Extension/AIMail_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YDE2UY2S5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AIMail Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AIMail Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.flowritesco.AIMail.AIMail-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -335,7 +512,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5CF5FCAF299CE2A500747A80 /* Build configuration list for PBXNativeTarget "AIMail Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CF5FCB0299CE2A500747A80 /* Debug */,
+				5CF5FCB1299CE2A500747A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CF5FCB3299CE43400747A80 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CF5FCB4299CE43400747A80 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CF5FCB3299CE43400747A80 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CF5FC82299CE24F00747A80 /* Project object */;
 }
